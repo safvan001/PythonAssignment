@@ -1,3 +1,7 @@
+## Technologies Used
+- Python
+- Django
+- HTML/CSS for frontend
 ## Setup Instructions
     clone the repository:
     git clone https://github.com/yourusername/PythonAssignment.git
