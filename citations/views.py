@@ -19,7 +19,6 @@ def fetch_data(api_url):
         data.extend(page_data)
         page += 1
 
-    # print("Fetched data:", data) 
     return data
 
 from difflib import SequenceMatcher
@@ -40,7 +39,6 @@ def identify_citations(data):
             matcher = SequenceMatcher(None, response_text, context)
             match_ratio = matcher.ratio()
 
-            # Adjust the threshold as needed
             if match_ratio > 0.5:
                 citation = {
                     "id": source.get("id"),
@@ -56,7 +54,6 @@ def identify_citations(data):
     return results
 def index(request):
     data = fetch_data(API_URL)
-    results = identify_citations(data)
-    # print("Results passed to template:", results)  
+    results = identify_citations(data) 
     return render(request, 'base.html', {'results': results})
 
