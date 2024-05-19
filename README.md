@@ -1,5 +1,5 @@
-# Setup Instructions
-    - clone the repository:
+## Setup Instructions
+    clone the repository:
     git clone https://github.com/yourusername/PythonAssignment.git
     cd PythonAssignment
    ## Create and activate a virtual environment:
